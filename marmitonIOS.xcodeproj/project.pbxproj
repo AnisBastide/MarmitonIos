@@ -18,6 +18,8 @@
 		DA9B6DEB26022C9100259822 /* APIRequestTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA9B6DEA26022C9100259822 /* APIRequestTest.swift */; };
 		DA9B6DEF260239E200259822 /* RecipeTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA9B6DEE260239E200259822 /* RecipeTableViewController.swift */; };
 		DA9B6DF126023D7100259822 /* RecipeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA9B6DF026023D7100259822 /* RecipeViewController.swift */; };
+		DA9B6DF326025A8500259822 /* RecipeCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA9B6DF226025A8500259822 /* RecipeCollectionViewController.swift */; };
+		DA9B6DF826026A3200259822 /* RecipeCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA9B6DF626026A3200259822 /* RecipeCollectionViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -55,6 +57,8 @@
 		DA9B6DEA26022C9100259822 /* APIRequestTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIRequestTest.swift; sourceTree = "<group>"; };
 		DA9B6DEE260239E200259822 /* RecipeTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecipeTableViewController.swift; sourceTree = "<group>"; };
 		DA9B6DF026023D7100259822 /* RecipeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecipeViewController.swift; sourceTree = "<group>"; };
+		DA9B6DF226025A8500259822 /* RecipeCollectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecipeCollectionViewController.swift; sourceTree = "<group>"; };
+		DA9B6DF626026A3200259822 /* RecipeCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecipeCollectionViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -139,9 +143,11 @@
 		DA9B6DE726022A6200259822 /* viewControllers */ = {
 			isa = PBXGroup;
 			children = (
+				DA9B6DF626026A3200259822 /* RecipeCollectionViewCell.swift */,
 				DA9B6DBB260221F900259822 /* HomeController.swift */,
 				DA9B6DEE260239E200259822 /* RecipeTableViewController.swift */,
 				DA9B6DF026023D7100259822 /* RecipeViewController.swift */,
+				DA9B6DF226025A8500259822 /* RecipeCollectionViewController.swift */,
 			);
 			path = viewControllers;
 			sourceTree = "<group>";
@@ -292,6 +298,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DA9B6DF826026A3200259822 /* RecipeCollectionViewCell.swift in Sources */,
+				DA9B6DF326025A8500259822 /* RecipeCollectionViewController.swift in Sources */,
 				DA9B6DF126023D7100259822 /* RecipeViewController.swift in Sources */,
 				DA9B6DBC260221F900259822 /* HomeController.swift in Sources */,
 				DA9B6DB8260221F900259822 /* AppDelegate.swift in Sources */,
