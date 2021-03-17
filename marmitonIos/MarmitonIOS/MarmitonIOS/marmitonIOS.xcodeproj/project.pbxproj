@@ -1,0 +1,589 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		DA9B6DB8260221F900259822 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA9B6DB7260221F900259822 /* AppDelegate.swift */; };
+		DA9B6DBA260221F900259822 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA9B6DB9260221F900259822 /* SceneDelegate.swift */; };
+		DA9B6DBC260221F900259822 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA9B6DBB260221F900259822 /* ViewController.swift */; };
+		DA9B6DBF260221F900259822 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DA9B6DBD260221F900259822 /* Main.storyboard */; };
+		DA9B6DC1260221FA00259822 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DA9B6DC0260221FA00259822 /* Assets.xcassets */; };
+		DA9B6DC4260221FA00259822 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DA9B6DC2260221FA00259822 /* LaunchScreen.storyboard */; };
+		DA9B6DCF260221FA00259822 /* marmitonIOSTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA9B6DCE260221FA00259822 /* marmitonIOSTests.swift */; };
+		DA9B6DDA260221FA00259822 /* marmitonIOSUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA9B6DD9260221FA00259822 /* marmitonIOSUITests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		DA9B6DCB260221FA00259822 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = DA9B6DAC260221F900259822 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = DA9B6DB3260221F900259822;
+			remoteInfo = marmitonIOS;
+		};
+		DA9B6DD6260221FA00259822 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = DA9B6DAC260221F900259822 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = DA9B6DB3260221F900259822;
+			remoteInfo = marmitonIOS;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		DA9B6DB4260221F900259822 /* marmitonIOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = marmitonIOS.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		DA9B6DB7260221F900259822 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		DA9B6DB9260221F900259822 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		DA9B6DBB260221F900259822 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		DA9B6DBE260221F900259822 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		DA9B6DC0260221FA00259822 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		DA9B6DC3260221FA00259822 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		DA9B6DC5260221FA00259822 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DA9B6DCA260221FA00259822 /* marmitonIOSTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = marmitonIOSTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		DA9B6DCE260221FA00259822 /* marmitonIOSTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = marmitonIOSTests.swift; sourceTree = "<group>"; };
+		DA9B6DD0260221FA00259822 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DA9B6DD5260221FA00259822 /* marmitonIOSUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = marmitonIOSUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		DA9B6DD9260221FA00259822 /* marmitonIOSUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = marmitonIOSUITests.swift; sourceTree = "<group>"; };
+		DA9B6DDB260221FA00259822 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		DA9B6DB1260221F900259822 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DA9B6DC7260221FA00259822 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DA9B6DD2260221FA00259822 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		DA9B6DAB260221F900259822 = {
+			isa = PBXGroup;
+			children = (
+				DA9B6DB6260221F900259822 /* marmitonIOS */,
+				DA9B6DCD260221FA00259822 /* marmitonIOSTests */,
+				DA9B6DD8260221FA00259822 /* marmitonIOSUITests */,
+				DA9B6DB5260221F900259822 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		DA9B6DB5260221F900259822 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				DA9B6DB4260221F900259822 /* marmitonIOS.app */,
+				DA9B6DCA260221FA00259822 /* marmitonIOSTests.xctest */,
+				DA9B6DD5260221FA00259822 /* marmitonIOSUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		DA9B6DB6260221F900259822 /* marmitonIOS */ = {
+			isa = PBXGroup;
+			children = (
+				DA9B6DB7260221F900259822 /* AppDelegate.swift */,
+				DA9B6DB9260221F900259822 /* SceneDelegate.swift */,
+				DA9B6DBB260221F900259822 /* ViewController.swift */,
+				DA9B6DBD260221F900259822 /* Main.storyboard */,
+				DA9B6DC0260221FA00259822 /* Assets.xcassets */,
+				DA9B6DC2260221FA00259822 /* LaunchScreen.storyboard */,
+				DA9B6DC5260221FA00259822 /* Info.plist */,
+			);
+			path = marmitonIOS;
+			sourceTree = "<group>";
+		};
+		DA9B6DCD260221FA00259822 /* marmitonIOSTests */ = {
+			isa = PBXGroup;
+			children = (
+				DA9B6DCE260221FA00259822 /* marmitonIOSTests.swift */,
+				DA9B6DD0260221FA00259822 /* Info.plist */,
+			);
+			path = marmitonIOSTests;
+			sourceTree = "<group>";
+		};
+		DA9B6DD8260221FA00259822 /* marmitonIOSUITests */ = {
+			isa = PBXGroup;
+			children = (
+				DA9B6DD9260221FA00259822 /* marmitonIOSUITests.swift */,
+				DA9B6DDB260221FA00259822 /* Info.plist */,
+			);
+			path = marmitonIOSUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		DA9B6DB3260221F900259822 /* marmitonIOS */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = DA9B6DDE260221FA00259822 /* Build configuration list for PBXNativeTarget "marmitonIOS" */;
+			buildPhases = (
+				DA9B6DB0260221F900259822 /* Sources */,
+				DA9B6DB1260221F900259822 /* Frameworks */,
+				DA9B6DB2260221F900259822 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = marmitonIOS;
+			productName = marmitonIOS;
+			productReference = DA9B6DB4260221F900259822 /* marmitonIOS.app */;
+			productType = "com.apple.product-type.application";
+		};
+		DA9B6DC9260221FA00259822 /* marmitonIOSTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = DA9B6DE1260221FA00259822 /* Build configuration list for PBXNativeTarget "marmitonIOSTests" */;
+			buildPhases = (
+				DA9B6DC6260221FA00259822 /* Sources */,
+				DA9B6DC7260221FA00259822 /* Frameworks */,
+				DA9B6DC8260221FA00259822 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				DA9B6DCC260221FA00259822 /* PBXTargetDependency */,
+			);
+			name = marmitonIOSTests;
+			productName = marmitonIOSTests;
+			productReference = DA9B6DCA260221FA00259822 /* marmitonIOSTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		DA9B6DD4260221FA00259822 /* marmitonIOSUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = DA9B6DE4260221FA00259822 /* Build configuration list for PBXNativeTarget "marmitonIOSUITests" */;
+			buildPhases = (
+				DA9B6DD1260221FA00259822 /* Sources */,
+				DA9B6DD2260221FA00259822 /* Frameworks */,
+				DA9B6DD3260221FA00259822 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				DA9B6DD7260221FA00259822 /* PBXTargetDependency */,
+			);
+			name = marmitonIOSUITests;
+			productName = marmitonIOSUITests;
+			productReference = DA9B6DD5260221FA00259822 /* marmitonIOSUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		DA9B6DAC260221F900259822 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1100;
+				LastUpgradeCheck = 1100;
+				ORGANIZATIONNAME = Group2;
+				TargetAttributes = {
+					DA9B6DB3260221F900259822 = {
+						CreatedOnToolsVersion = 11.0;
+					};
+					DA9B6DC9260221FA00259822 = {
+						CreatedOnToolsVersion = 11.0;
+						TestTargetID = DA9B6DB3260221F900259822;
+					};
+					DA9B6DD4260221FA00259822 = {
+						CreatedOnToolsVersion = 11.0;
+						TestTargetID = DA9B6DB3260221F900259822;
+					};
+				};
+			};
+			buildConfigurationList = DA9B6DAF260221F900259822 /* Build configuration list for PBXProject "marmitonIOS" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = DA9B6DAB260221F900259822;
+			productRefGroup = DA9B6DB5260221F900259822 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				DA9B6DB3260221F900259822 /* marmitonIOS */,
+				DA9B6DC9260221FA00259822 /* marmitonIOSTests */,
+				DA9B6DD4260221FA00259822 /* marmitonIOSUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		DA9B6DB2260221F900259822 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DA9B6DC4260221FA00259822 /* LaunchScreen.storyboard in Resources */,
+				DA9B6DC1260221FA00259822 /* Assets.xcassets in Resources */,
+				DA9B6DBF260221F900259822 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DA9B6DC8260221FA00259822 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DA9B6DD3260221FA00259822 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		DA9B6DB0260221F900259822 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DA9B6DBC260221F900259822 /* ViewController.swift in Sources */,
+				DA9B6DB8260221F900259822 /* AppDelegate.swift in Sources */,
+				DA9B6DBA260221F900259822 /* SceneDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DA9B6DC6260221FA00259822 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DA9B6DCF260221FA00259822 /* marmitonIOSTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DA9B6DD1260221FA00259822 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DA9B6DDA260221FA00259822 /* marmitonIOSUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		DA9B6DCC260221FA00259822 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = DA9B6DB3260221F900259822 /* marmitonIOS */;
+			targetProxy = DA9B6DCB260221FA00259822 /* PBXContainerItemProxy */;
+		};
+		DA9B6DD7260221FA00259822 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = DA9B6DB3260221F900259822 /* marmitonIOS */;
+			targetProxy = DA9B6DD6260221FA00259822 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		DA9B6DBD260221F900259822 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				DA9B6DBE260221F900259822 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		DA9B6DC2260221FA00259822 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				DA9B6DC3260221FA00259822 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		DA9B6DDC260221FA00259822 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		DA9B6DDD260221FA00259822 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		DA9B6DDF260221FA00259822 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = marmitonIOS/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.group2.marmitonIOS;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		DA9B6DE0260221FA00259822 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = marmitonIOS/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.group2.marmitonIOS;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		DA9B6DE2260221FA00259822 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = marmitonIOSTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.group2.marmitonIOSTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/marmitonIOS.app/marmitonIOS";
+			};
+			name = Debug;
+		};
+		DA9B6DE3260221FA00259822 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = marmitonIOSTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.group2.marmitonIOSTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/marmitonIOS.app/marmitonIOS";
+			};
+			name = Release;
+		};
+		DA9B6DE5260221FA00259822 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = marmitonIOSUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.group2.marmitonIOSUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = marmitonIOS;
+			};
+			name = Debug;
+		};
+		DA9B6DE6260221FA00259822 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = marmitonIOSUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.group2.marmitonIOSUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = marmitonIOS;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		DA9B6DAF260221F900259822 /* Build configuration list for PBXProject "marmitonIOS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DA9B6DDC260221FA00259822 /* Debug */,
+				DA9B6DDD260221FA00259822 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		DA9B6DDE260221FA00259822 /* Build configuration list for PBXNativeTarget "marmitonIOS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DA9B6DDF260221FA00259822 /* Debug */,
+				DA9B6DE0260221FA00259822 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		DA9B6DE1260221FA00259822 /* Build configuration list for PBXNativeTarget "marmitonIOSTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DA9B6DE2260221FA00259822 /* Debug */,
+				DA9B6DE3260221FA00259822 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		DA9B6DE4260221FA00259822 /* Build configuration list for PBXNativeTarget "marmitonIOSUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DA9B6DE5260221FA00259822 /* Debug */,
+				DA9B6DE6260221FA00259822 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = DA9B6DAC260221F900259822 /* Project object */;
+}

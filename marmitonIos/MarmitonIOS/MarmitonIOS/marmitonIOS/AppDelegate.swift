@@ -1,13 +1,14 @@
 //
 //  AppDelegate.swift
-//  MarmitonIOS
+//  marmitonIOS
 //
-//  Created by amine amara on 17/03/2021.
+//  Created by Anthony BAC on 17/03/2021.
+//  Copyright © 2021 Group2. All rights reserved.
 //
 
 import UIKit
 
-@main
+@UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
 
