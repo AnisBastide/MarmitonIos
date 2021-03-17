@@ -1,14 +1,14 @@
 //
-//  marmitonIosTests.swift
-//  marmitonIosTests
+//  MarmitonIOSTests.swift
+//  MarmitonIOSTests
 //
-//  Created by Anis Bastide on 17/03/2021.
+//  Created by amine amara on 17/03/2021.
 //
 
 import XCTest
-@testable import marmitonIos
+@testable import MarmitonIOS
 
-class marmitonIosTests: XCTestCase {
+class MarmitonIOSTests: XCTestCase {
 
     override func setUpWithError() throws {
         // Put setup code here. This method is called before the invocation of each test method in the class.

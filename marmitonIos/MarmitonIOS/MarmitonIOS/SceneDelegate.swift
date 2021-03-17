@@ -1,8 +1,8 @@
 //
 //  SceneDelegate.swift
-//  marmitonIos
+//  MarmitonIOS
 //
-//  Created by Anis Bastide on 17/03/2021.
+//  Created by amine amara on 17/03/2021.
 //
 
 import UIKit
