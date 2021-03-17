@@ -15,6 +15,7 @@
 		FCFDEA022601F3C90073F811 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FCFDEA002601F3C90073F811 /* LaunchScreen.storyboard */; };
 		FCFDEA0D2601F3C90073F811 /* marmitonIosTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCFDEA0C2601F3C90073F811 /* marmitonIosTests.swift */; };
 		FCFDEA182601F3C90073F811 /* marmitonIosUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCFDEA172601F3C90073F811 /* marmitonIosUITests.swift */; };
+		FCFDEA292602054B0073F811 /* ApiRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCFDEA282602054B0073F811 /* ApiRequest.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +50,7 @@
 		FCFDEA132601F3C90073F811 /* marmitonIosUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = marmitonIosUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		FCFDEA172601F3C90073F811 /* marmitonIosUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = marmitonIosUITests.swift; sourceTree = "<group>"; };
 		FCFDEA192601F3C90073F811 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FCFDEA282602054B0073F811 /* ApiRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiRequest.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -106,6 +108,7 @@
 				FCFDE9FE2601F3C90073F811 /* Assets.xcassets */,
 				FCFDEA002601F3C90073F811 /* LaunchScreen.storyboard */,
 				FCFDEA032601F3C90073F811 /* Info.plist */,
+				FCFDEA282602054B0073F811 /* ApiRequest.swift */,
 			);
 			path = marmitonIos;
 			sourceTree = "<group>";
@@ -260,6 +263,7 @@
 			files = (
 				FCFDE9FA2601F3C80073F811 /* ViewController.swift in Sources */,
 				FCFDE9F62601F3C80073F811 /* AppDelegate.swift in Sources */,
+				FCFDEA292602054B0073F811 /* ApiRequest.swift in Sources */,
 				FCFDE9F82601F3C80073F811 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
