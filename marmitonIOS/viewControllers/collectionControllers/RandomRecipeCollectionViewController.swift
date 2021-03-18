@@ -11,13 +11,11 @@ import UIKit
 private let reuseIdentifier = "Cell"
 
 class RecipeCollectionViewController: UICollectionViewController {
-<<<<<<< HEAD
     var titre: String?
     var image:String?
-=======
+
     @IBOutlet weak var imageView: UIImageView!
     
->>>>>>> TableViewControllerTest
     var tab = ["Test", "Micro", "1 2", "3 4", "Encoretilfaluquejelesus", "Théo est en retard", "Etienne", "jambonneau", "xcode c'est de la merde", "Ta faute", "LOUL", "Il pleut putain", "Maitre Gimp", "Photoshiotte", "caca", "en effet"]
 
     override func viewWillAppear(_ animated: Bool) {
@@ -103,7 +101,7 @@ class RecipeCollectionViewController: UICollectionViewController {
 
             if let image = UIImage(data: data) {
                 print("Toast", image == nil)
-                imageView.image = image
+                //imageView.image = image
             }
             //imageView.image = UIImage(data: data)
         }
