@@ -1,87 +1,191 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14868" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Tkn-Lz-Rrf">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14868" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="xMw-MU-INw">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14824"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="collection view cell content view" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--homeView-->
-        <scene sceneID="tne-QT-ifu">
+        <!--Recipe Collection View-->
+        <scene sceneID="84c-zO-vaO">
             <objects>
-                <viewController id="BYZ-38-t0r" userLabel="homeView" customClass="ViewController" customModule="marmitonIOS" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                <collectionViewController id="ZhP-Hw-zaa" userLabel="Recipe Collection View" customClass="RecipeCollectionViewController" customModule="marmitonIOS" customModuleProvider="target" sceneMemberID="viewController">
+                    <collectionView key="view" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" pagingEnabled="YES" dataMode="prototypes" id="xkY-Cl-Rkr">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="gradient" translatesAutoresizingMaskIntoConstraints="NO" id="Eiy-KH-A7a">
-                                <rect key="frame" x="20" y="44" width="374" height="818"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <collectionViewFlowLayout key="collectionViewLayout" automaticEstimatedItemSize="YES" minimumLineSpacing="10" minimumInteritemSpacing="10" id="mYW-Of-2ll">
+                            <size key="itemSize" width="150" height="150"/>
+                            <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                            <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                            <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                        </collectionViewFlowLayout>
+                        <cells>
+                            <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="Cell" id="ngp-eK-H95" customClass="RecipeCollectionViewCell" customModule="marmitonIOS" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="0.0" width="150" height="150"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            </imageView>
-                        </subviews>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
-                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
-                    </view>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+                                <collectionViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="1oQ-2K-S2u" customClass="RecipeCollectionViewCell" customModule="marmitonIOS" customModuleProvider="target">
+                                    <rect key="frame" x="0.0" y="0.0" width="150" height="150"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dU9-pA-PaU">
+                                            <rect key="frame" x="0.0" y="0.0" width="150" height="150"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                            <nil key="textColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                    </subviews>
+                                    <constraints>
+                                        <constraint firstAttribute="trailing" secondItem="dU9-pA-PaU" secondAttribute="trailing" id="Mvv-vZ-VRj"/>
+                                        <constraint firstItem="dU9-pA-PaU" firstAttribute="top" secondItem="1oQ-2K-S2u" secondAttribute="top" id="fuz-Gd-PnZ"/>
+                                        <constraint firstItem="dU9-pA-PaU" firstAttribute="leading" secondItem="1oQ-2K-S2u" secondAttribute="leading" id="j64-0W-BVE"/>
+                                        <constraint firstAttribute="bottom" secondItem="dU9-pA-PaU" secondAttribute="bottom" id="tLT-PO-ToF"/>
+                                    </constraints>
+                                </collectionViewCellContentView>
+                                <size key="customSize" width="150" height="150"/>
+                                <connections>
+                                    <outlet property="label" destination="dU9-pA-PaU" id="Qqo-RX-w1I"/>
+                                    <segue destination="1C7-ri-o26" kind="show" id="DtR-Fq-xL9"/>
+                                </connections>
+                            </collectionViewCell>
+                        </cells>
+                        <connections>
+                            <outlet property="dataSource" destination="ZhP-Hw-zaa" id="qCy-ea-PhJ"/>
+                            <outlet property="delegate" destination="ZhP-Hw-zaa" id="UYD-zo-qTb"/>
+                        </connections>
+                    </collectionView>
+                    <navigationItem key="navigationItem" id="WXO-1L-KG4"/>
+                </collectionViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="oX1-5u-Xe2" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="137.68115942028987" y="88.392857142857139"/>
+            <point key="canvasLocation" x="1739" y="88"/>
         </scene>
-        <!--Table View Controller-->
-        <scene sceneID="JX5-7K-54K">
+        <!--Search Collection View-->
+        <scene sceneID="utJ-Ga-1Ut">
             <objects>
-                <tableViewController id="Tkn-Lz-Rrf" customClass="TableViewController" customModule="marmitonIOS" customModuleProvider="target" sceneMemberID="viewController">
-                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="5JW-L8-GEr">
+                <collectionViewController id="aMf-9L-tIP" userLabel="Search Collection View" customClass="SearchCollectionViewController" customModule="marmitonIOS" customModuleProvider="target" sceneMemberID="viewController">
+                    <collectionView key="view" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" pagingEnabled="YES" dataMode="prototypes" id="fCf-aG-jR8">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
-                        <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="reuseIdentifier" id="j6R-16-e0h">
-                                <rect key="frame" x="0.0" y="28" width="414" height="43.5"/>
-                                <autoresizingMask key="autoresizingMask"/>
-                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="j6R-16-e0h" id="QxW-hq-lfT">
-                                    <rect key="frame" x="0.0" y="0.0" width="414" height="43.5"/>
+                        <collectionViewFlowLayout key="collectionViewLayout" automaticEstimatedItemSize="YES" minimumLineSpacing="10" minimumInteritemSpacing="10" id="K1c-6b-lAr">
+                            <size key="itemSize" width="150" height="150"/>
+                            <size key="headerReferenceSize" width="50" height="50"/>
+                            <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                            <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                        </collectionViewFlowLayout>
+                        <cells>
+                            <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="Cell" id="kJl-21-w51" customClass="RecipeCollectionViewCell" customModule="marmitonIOS" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="50" width="150" height="150"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <collectionViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="Hzo-ht-iN2">
+                                    <rect key="frame" x="0.0" y="0.0" width="150" height="150"/>
                                     <autoresizingMask key="autoresizingMask"/>
-                                </tableViewCellContentView>
-                            </tableViewCell>
-                        </prototypes>
+                                    <subviews>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="k1v-xQ-tHO">
+                                            <rect key="frame" x="0.0" y="0.0" width="150" height="150"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                            <nil key="textColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                    </subviews>
+                                    <constraints>
+                                        <constraint firstAttribute="trailing" secondItem="k1v-xQ-tHO" secondAttribute="trailing" id="ABW-4B-Adp"/>
+                                        <constraint firstAttribute="bottom" secondItem="k1v-xQ-tHO" secondAttribute="bottom" id="FQl-Ku-Fk6"/>
+                                        <constraint firstItem="k1v-xQ-tHO" firstAttribute="leading" secondItem="Hzo-ht-iN2" secondAttribute="leading" id="jdG-Y5-tXq"/>
+                                        <constraint firstItem="k1v-xQ-tHO" firstAttribute="top" secondItem="Hzo-ht-iN2" secondAttribute="top" id="qYI-SX-PIa"/>
+                                    </constraints>
+                                </collectionViewCellContentView>
+                                <size key="customSize" width="150" height="150"/>
+                                <connections>
+                                    <outlet property="label" destination="k1v-xQ-tHO" id="J6T-oD-b6o"/>
+                                </connections>
+                            </collectionViewCell>
+                        </cells>
+                        <collectionReusableView key="sectionHeaderView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" reuseIdentifier="collectionViewHeader" id="rBr-La-ccB" customClass="CollectionReusableView" customModule="marmitonIOS" customModuleProvider="target">
+                            <rect key="frame" x="0.0" y="0.0" width="414" height="50"/>
+                            <autoresizingMask key="autoresizingMask"/>
+                            <subviews>
+                                <searchBar contentMode="redraw" placeholder="Ingredients: &quot;potato, meat&quot;" translucent="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JeJ-3C-U55">
+                                    <rect key="frame" x="0.0" y="0.0" width="414" height="50"/>
+                                    <color key="barTintColor" systemColor="systemPinkColor" red="1" green="0.17647058823529413" blue="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    <textInputTraits key="textInputTraits"/>
+                                </searchBar>
+                            </subviews>
+                            <color key="backgroundColor" systemColor="systemOrangeColor" red="1" green="0.58431372549019611" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <constraints>
+                                <constraint firstAttribute="bottom" secondItem="JeJ-3C-U55" secondAttribute="bottom" id="eWB-5U-S1Z"/>
+                                <constraint firstItem="JeJ-3C-U55" firstAttribute="top" secondItem="rBr-La-ccB" secondAttribute="top" id="g6k-fu-eip"/>
+                                <constraint firstItem="JeJ-3C-U55" firstAttribute="leading" secondItem="rBr-La-ccB" secondAttribute="leading" id="hoi-Nb-pwA"/>
+                                <constraint firstAttribute="trailing" secondItem="JeJ-3C-U55" secondAttribute="trailing" id="smZ-Ny-C7Q"/>
+                            </constraints>
+                            <connections>
+                                <outlet property="searchBar" destination="JeJ-3C-U55" id="wr0-XT-zW8"/>
+                            </connections>
+                        </collectionReusableView>
                         <connections>
-                            <outlet property="dataSource" destination="Tkn-Lz-Rrf" id="cVJ-LK-K6C"/>
-                            <outlet property="delegate" destination="Tkn-Lz-Rrf" id="e3n-p0-8Sk"/>
+                            <outlet property="dataSource" destination="aMf-9L-tIP" id="anT-Y3-Kty"/>
+                            <outlet property="delegate" destination="aMf-9L-tIP" id="IW8-cK-W9P"/>
                         </connections>
-                    </tableView>
-                </tableViewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="Pbo-cX-yBX" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                    </collectionView>
+                </collectionViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="IPQ-HI-kAk" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="948" y="88"/>
+            <point key="canvasLocation" x="1738" y="-585"/>
         </scene>
         <!--Recipe View Controller-->
-        <scene sceneID="5Sa-Uz-NZt">
+        <scene sceneID="DGN-gf-ld0">
             <objects>
-                <viewController id="dXh-oO-2cZ" userLabel="Recipe View Controller" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="3Kp-O7-pRp">
+                <viewController storyboardIdentifier="recipe" id="1C7-ri-o26" userLabel="Recipe View Controller" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="fM1-Yj-3Fi">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="NIGGER" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qkC-Jo-vzc">
-                                <rect key="frame" x="20" y="44" width="107" height="36"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="23D-Kq-UIM">
+                                <rect key="frame" x="40" y="128" width="334" height="142"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="RECIPE NAME" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mNb-hC-hW4">
+                                <rect key="frame" x="40" y="305" width="109" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
-                        <viewLayoutGuide key="safeArea" id="Zb6-qk-jn1"/>
+                        <constraints>
+                            <constraint firstItem="mNb-hC-hW4" firstAttribute="leading" secondItem="23D-Kq-UIM" secondAttribute="leading" id="G41-62-V7W"/>
+                            <constraint firstItem="7Dh-2y-HA6" firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="mNb-hC-hW4" secondAttribute="trailing" symbolic="YES" id="ViF-7K-Jcq"/>
+                            <constraint firstItem="23D-Kq-UIM" firstAttribute="top" secondItem="7Dh-2y-HA6" secondAttribute="top" constant="40" id="ZpP-w2-bWY"/>
+                            <constraint firstItem="23D-Kq-UIM" firstAttribute="leading" secondItem="7Dh-2y-HA6" secondAttribute="leading" constant="40" id="e6Z-eR-ogN"/>
+                            <constraint firstItem="7Dh-2y-HA6" firstAttribute="bottom" secondItem="mNb-hC-hW4" secondAttribute="bottom" constant="536" id="guD-R2-Lel"/>
+                            <constraint firstItem="mNb-hC-hW4" firstAttribute="top" secondItem="23D-Kq-UIM" secondAttribute="bottom" constant="35" id="mwX-RN-Yvk"/>
+                            <constraint firstItem="7Dh-2y-HA6" firstAttribute="trailing" secondItem="23D-Kq-UIM" secondAttribute="trailing" constant="40" id="xei-Vs-tUe"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="7Dh-2y-HA6"/>
                     </view>
+                    <navigationItem key="navigationItem" id="eQi-Gg-UZF"/>
                 </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="tJW-YH-6Df" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="CJf-6q-gY2" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1654" y="88"/>
+            <point key="canvasLocation" x="2894.202898550725" y="87.723214285714278"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="D0a-4T-WvR">
+            <objects>
+                <navigationController id="xMw-MU-INw" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="HpE-HM-REP">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="ZhP-Hw-zaa" kind="relationship" relationship="rootViewController" id="6VM-Vt-Fsd"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ztR-Y0-acO" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="691" y="88"/>
         </scene>
     </scenes>
-    <resources>
-        <image name="gradient" width="1815" height="1021"/>
-    </resources>
 </document>
