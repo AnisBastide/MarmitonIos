@@ -30,12 +30,16 @@
                                     <rect key="frame" x="0.0" y="0.0" width="150" height="150"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
-                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dU9-pA-PaU">
-                                            <rect key="frame" x="0.0" y="0.0" width="150" height="150"/>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dU9-pA-PaU">
+                                            <rect key="frame" x="0.0" y="127" width="150" height="23"/>
                                             <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                             <nil key="textColor"/>
                                             <nil key="highlightedColor"/>
                                         </label>
+                                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" restorationIdentifier="micral" image="gradient" translatesAutoresizingMaskIntoConstraints="NO" id="R76-0g-HN4" userLabel="Image">
+                                            <rect key="frame" x="0.0" y="0.0" width="150" height="128"/>
+                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        </imageView>
                                     </subviews>
                                     <constraints>
                                         <constraint firstAttribute="trailing" secondItem="dU9-pA-PaU" secondAttribute="trailing" id="Mvv-vZ-VRj"/>
@@ -60,7 +64,7 @@
                 </collectionViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="oX1-5u-Xe2" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1739" y="88"/>
+            <point key="canvasLocation" x="1737.68115942029" y="87.723214285714278"/>
         </scene>
         <!--Search Collection View-->
         <scene sceneID="utJ-Ga-1Ut">
@@ -188,4 +192,7 @@
             <point key="canvasLocation" x="691" y="88"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="gradient" width="1815" height="1021"/>
+    </resources>
 </document>

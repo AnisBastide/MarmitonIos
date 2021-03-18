@@ -11,6 +11,7 @@ import UIKit
 private let reuseIdentifier = "Cell"
 
 class RecipeCollectionViewController: UICollectionViewController {
+    @IBOutlet weak var imageView: UIImageView!
     
     var tab = ["Test", "Micro", "1 2", "3 4", "Encoretilfaluquejelesus", "Théo est en retard", "Etienne", "jambonneau", "xcode c'est de la merde", "Ta faute", "LOUL", "Il pleut putain", "Maitre Gimp", "Photoshiotte", "caca", "en effet"]
 
@@ -55,6 +56,20 @@ class RecipeCollectionViewController: UICollectionViewController {
     
         // Configure the cell
         cell.backgroundColor = UIColor.red
+        let urlTest = URL(string: "https://spoonacular.com/recipeImages/638819-556x370.jpg")
+        
+        if let data = try? Data(contentsOf: urlTest!) {
+            print("test ", data)
+            print("test2 ", urlTest!)
+
+            if let image = UIImage(data: data) {
+                print("Toast", image == nil)
+                imageView.image = image
+            }
+            //imageView.image = UIImage(data: data)
+        }
+        
+        
         cell.label.text = tab[indexPath.row]
 
         return cell
