@@ -9,10 +9,9 @@
 import Foundation
 
 public class APICall {
-    
-    static public var tosend: [String: AnyObject]
-    
-    static func callRandomRecipes() {
+
+    static func callRandomRecipes() -> [String:AnyObject?]{
+        var dataToReturn:[String:AnyObject?]? = nil
         let url = URL(string: "https://api.spoonacular.com/recipes/random/?apiKey=d10d3dc0e119465f94422d73fcdb77cd&number=6")!
                 
                 let config = URLSessionConfiguration.default
@@ -26,7 +25,8 @@ public class APICall {
                             if let data = json as? [String: AnyObject],
                                let recipes = data["recipes"] as? [AnyObject],
                                let stuff = recipes[0] as? [String: AnyObject] {
-                                tosend = ["title": stuff["title"], "image": stuff["image"], "id" : stuff["id"]]
+                                let tosend = ["title": stuff["title"], "image": stuff["image"], "id" : stuff["id"]]
+                                dataToReturn = tosend
                                 print(tosend)
                             }
                         }
@@ -34,6 +34,7 @@ public class APICall {
                     }
                 }
                 task.resume()
+        return dataToReturn ?? ["":nil]
     }
     
     static func searchByIngredients(ingredients : [String]) {

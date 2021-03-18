@@ -11,9 +11,13 @@ import UIKit
 private let reuseIdentifier = "Cell"
 
 class RecipeCollectionViewController: UICollectionViewController {
-    
+    var titre: String?
+    var image:String?
     var tab = ["Test", "Micro", "1 2", "3 4", "Encoretilfaluquejelesus", "Théo est en retard", "Etienne", "jambonneau", "xcode c'est de la merde", "Ta faute", "LOUL", "Il pleut putain", "Maitre Gimp", "Photoshiotte", "caca", "en effet"]
 
+    override func viewWillAppear(_ animated: Bool) {
+        
+    }
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -44,7 +48,35 @@ class RecipeCollectionViewController: UICollectionViewController {
         return 1
     }
 
-
+    public func getRandomRecipe(){
+        let url = URL(string: "https://api.spoonacular.com/recipes/random/?apiKey=d10d3dc0e119465f94422d73fcdb77cd&number=6")!
+                
+                let config = URLSessionConfiguration.default
+                let sessions = URLSession(configuration: config)
+               
+                let task = sessions.dataTask(with: url) { (data, response, error) in
+                    if error != nil {
+                        print(error!.localizedDescription)
+                    } else {
+                         if let json = try? JSONSerialization.jsonObject(with: data!) {
+                            if let data = json as? [String: AnyObject],
+                               let recipes = data["recipes"] as? [AnyObject],
+                               let stuff = recipes[0] as? [String: AnyObject] {
+                                let tosend = ["title": stuff["title"], "image": stuff["image"], "id" : stuff["id"]]
+                                self.titre=tosend["title"] as! String
+                                self.image = tosend["image"] as! String
+                                DispatchQueue.main.async{
+                                    self.collectionView.reloadData()
+                                }
+                                
+                                print(tosend)
+                            }
+                        }
+                        
+                    }
+                }
+                task.resume()
+    }
     override func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
         // #warning Incomplete implementation, return the number of items
         return tab.count
@@ -55,8 +87,8 @@ class RecipeCollectionViewController: UICollectionViewController {
     
         // Configure the cell
         cell.backgroundColor = UIColor.red
-        cell.label.text = tab[indexPath.row]
-
+        getRandomRecipe()
+        cell.label.text = titre
         return cell
     }
 
