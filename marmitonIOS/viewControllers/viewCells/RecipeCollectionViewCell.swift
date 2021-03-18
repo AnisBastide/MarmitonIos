@@ -16,4 +16,9 @@ class RecipeCollectionViewCell: UICollectionViewCell {
         // Initialization code
     }
 
+    @IBAction func clickToRecipe(_ sender:Any) {
+        /*if let vc = UIStoryboard(name:"Main", bundle:nil).instantiateViewController(identifier: "recipe") as? UIViewController {
+            self.navigationController?.pushViewController(vc, animated:true)
+        }*/
+    }
 }

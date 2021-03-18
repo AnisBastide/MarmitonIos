@@ -7,19 +7,18 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		DA0784DD26035B6E00DB2139 /* SearchCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA0784DC26035B6E00DB2139 /* SearchCollectionViewController.swift */; };
+		DA0784DD26035B6E00DB2139 /* SearchRecipeCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA0784DC26035B6E00DB2139 /* SearchRecipeCollectionViewController.swift */; };
 		DA0784DF26035EE600DB2139 /* CollectionReusableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA0784DE26035EE600DB2139 /* CollectionReusableView.swift */; };
+		DA0784E5260391A300DB2139 /* RecipeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA0784E4260391A300DB2139 /* RecipeViewController.swift */; };
 		DA9B6DB8260221F900259822 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA9B6DB7260221F900259822 /* AppDelegate.swift */; };
 		DA9B6DBA260221F900259822 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA9B6DB9260221F900259822 /* SceneDelegate.swift */; };
-		DA9B6DBC260221F900259822 /* HomeController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA9B6DBB260221F900259822 /* HomeController.swift */; };
 		DA9B6DBF260221F900259822 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DA9B6DBD260221F900259822 /* Main.storyboard */; };
 		DA9B6DC1260221FA00259822 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DA9B6DC0260221FA00259822 /* Assets.xcassets */; };
 		DA9B6DC4260221FA00259822 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DA9B6DC2260221FA00259822 /* LaunchScreen.storyboard */; };
 		DA9B6DCF260221FA00259822 /* marmitonIOSTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA9B6DCE260221FA00259822 /* marmitonIOSTests.swift */; };
 		DA9B6DDA260221FA00259822 /* marmitonIOSUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA9B6DD9260221FA00259822 /* marmitonIOSUITests.swift */; };
 		DA9B6DEB26022C9100259822 /* APIRequestTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA9B6DEA26022C9100259822 /* APIRequestTest.swift */; };
-		DA9B6DF126023D7100259822 /* RecipeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA9B6DF026023D7100259822 /* RecipeViewController.swift */; };
-		DA9B6DF326025A8500259822 /* RecipeCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA9B6DF226025A8500259822 /* RecipeCollectionViewController.swift */; };
+		DA9B6DF326025A8500259822 /* RandomRecipeCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA9B6DF226025A8500259822 /* RandomRecipeCollectionViewController.swift */; };
 		DA9B6DF826026A3200259822 /* RecipeCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA9B6DF626026A3200259822 /* RecipeCollectionViewCell.swift */; };
 /* End PBXBuildFile section */
 
@@ -41,12 +40,12 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		DA0784DC26035B6E00DB2139 /* SearchCollectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchCollectionViewController.swift; sourceTree = "<group>"; };
+		DA0784DC26035B6E00DB2139 /* SearchRecipeCollectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchRecipeCollectionViewController.swift; sourceTree = "<group>"; };
 		DA0784DE26035EE600DB2139 /* CollectionReusableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionReusableView.swift; sourceTree = "<group>"; };
+		DA0784E4260391A300DB2139 /* RecipeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecipeViewController.swift; sourceTree = "<group>"; };
 		DA9B6DB4260221F900259822 /* marmitonIOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = marmitonIOS.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DA9B6DB7260221F900259822 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		DA9B6DB9260221F900259822 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		DA9B6DBB260221F900259822 /* HomeController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeController.swift; sourceTree = "<group>"; };
 		DA9B6DBE260221F900259822 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		DA9B6DC0260221FA00259822 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		DA9B6DC3260221FA00259822 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -58,8 +57,7 @@
 		DA9B6DD9260221FA00259822 /* marmitonIOSUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = marmitonIOSUITests.swift; sourceTree = "<group>"; };
 		DA9B6DDB260221FA00259822 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		DA9B6DEA26022C9100259822 /* APIRequestTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIRequestTest.swift; sourceTree = "<group>"; };
-		DA9B6DF026023D7100259822 /* RecipeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecipeViewController.swift; sourceTree = "<group>"; };
-		DA9B6DF226025A8500259822 /* RecipeCollectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecipeCollectionViewController.swift; sourceTree = "<group>"; };
+		DA9B6DF226025A8500259822 /* RandomRecipeCollectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RandomRecipeCollectionViewController.swift; sourceTree = "<group>"; };
 		DA9B6DF626026A3200259822 /* RecipeCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecipeCollectionViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -88,6 +86,39 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		DA0784E02603903B00DB2139 /* collectionControllers */ = {
+			isa = PBXGroup;
+			children = (
+				DA9B6DF226025A8500259822 /* RandomRecipeCollectionViewController.swift */,
+				DA0784DC26035B6E00DB2139 /* SearchRecipeCollectionViewController.swift */,
+			);
+			path = collectionControllers;
+			sourceTree = "<group>";
+		};
+		DA0784E12603907700DB2139 /* viewCells */ = {
+			isa = PBXGroup;
+			children = (
+				DA9B6DF626026A3200259822 /* RecipeCollectionViewCell.swift */,
+			);
+			path = viewCells;
+			sourceTree = "<group>";
+		};
+		DA0784E22603908B00DB2139 /* reusableViews */ = {
+			isa = PBXGroup;
+			children = (
+				DA0784DE26035EE600DB2139 /* CollectionReusableView.swift */,
+			);
+			path = reusableViews;
+			sourceTree = "<group>";
+		};
+		DA0784E32603917400DB2139 /* simpleViews */ = {
+			isa = PBXGroup;
+			children = (
+				DA0784E4260391A300DB2139 /* RecipeViewController.swift */,
+			);
+			path = simpleViews;
+			sourceTree = "<group>";
+		};
 		DA9B6DAB260221F900259822 = {
 			isa = PBXGroup;
 			children = (
@@ -111,7 +142,6 @@
 		DA9B6DB6260221F900259822 /* marmitonIOS */ = {
 			isa = PBXGroup;
 			children = (
-				DA9B6DED260239B600259822 /* Test */,
 				DA9B6DEC26022C9900259822 /* apiControllers */,
 				DA9B6DE726022A6200259822 /* viewControllers */,
 				DA9B6DB7260221F900259822 /* AppDelegate.swift */,
@@ -145,12 +175,10 @@
 		DA9B6DE726022A6200259822 /* viewControllers */ = {
 			isa = PBXGroup;
 			children = (
-				DA9B6DF626026A3200259822 /* RecipeCollectionViewCell.swift */,
-				DA9B6DBB260221F900259822 /* HomeController.swift */,
-				DA9B6DF026023D7100259822 /* RecipeViewController.swift */,
-				DA9B6DF226025A8500259822 /* RecipeCollectionViewController.swift */,
-				DA0784DC26035B6E00DB2139 /* SearchCollectionViewController.swift */,
-				DA0784DE26035EE600DB2139 /* CollectionReusableView.swift */,
+				DA0784E32603917400DB2139 /* simpleViews */,
+				DA0784E22603908B00DB2139 /* reusableViews */,
+				DA0784E12603907700DB2139 /* viewCells */,
+				DA0784E02603903B00DB2139 /* collectionControllers */,
 			);
 			path = viewControllers;
 			sourceTree = "<group>";
@@ -161,13 +189,6 @@
 				DA9B6DEA26022C9100259822 /* APIRequestTest.swift */,
 			);
 			path = apiControllers;
-			sourceTree = "<group>";
-		};
-		DA9B6DED260239B600259822 /* Test */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Test;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -302,11 +323,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				DA0784DF26035EE600DB2139 /* CollectionReusableView.swift in Sources */,
-				DA0784DD26035B6E00DB2139 /* SearchCollectionViewController.swift in Sources */,
+				DA0784DD26035B6E00DB2139 /* SearchRecipeCollectionViewController.swift in Sources */,
 				DA9B6DF826026A3200259822 /* RecipeCollectionViewCell.swift in Sources */,
-				DA9B6DF326025A8500259822 /* RecipeCollectionViewController.swift in Sources */,
-				DA9B6DF126023D7100259822 /* RecipeViewController.swift in Sources */,
-				DA9B6DBC260221F900259822 /* HomeController.swift in Sources */,
+				DA9B6DF326025A8500259822 /* RandomRecipeCollectionViewController.swift in Sources */,
+				DA0784E5260391A300DB2139 /* RecipeViewController.swift in Sources */,
 				DA9B6DB8260221F900259822 /* AppDelegate.swift in Sources */,
 				DA9B6DEB26022C9100259822 /* APIRequestTest.swift in Sources */,
 				DA9B6DBA260221F900259822 /* SceneDelegate.swift in Sources */,
