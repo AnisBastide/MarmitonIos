@@ -10,9 +10,9 @@ import UIKit
 
 private let reuseIdentifier = "Cell"
 
-class RecipeCollectionViewController: UICollectionViewController {
+class SearchCollectionViewController: UICollectionViewController, UISearchBarDelegate {
     
-    var tab = ["Test", "Micro", "1 2", "3 4", "Encoretilfaluquejelesus", "Théo est en retard", "Etienne", "jambonneau", "xcode c'est de la merde", "Ta faute", "LOUL", "Il pleut putain", "Maitre Gimp", "Photoshiotte", "caca", "en effet"]
+    var tab = ["Viande de cheval", "Test", "Micro", "1 2", "3 4", "Encoretilfaluquejelesus", "Théo est en retard", "Etienne", "jambonneau", "xcode c'est de la merde", "Ta faute", "LOUL", "Il pleut putain", "Maitre Gimp", "Photoshiotte", "caca", "en effet"]
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -58,6 +58,32 @@ class RecipeCollectionViewController: UICollectionViewController {
         cell.label.text = tab[indexPath.row]
 
         return cell
+    }
+    
+    override func collectionView(_ collectionView: UICollectionView, viewForSupplementaryElementOfKind kind: String, at indexPath: IndexPath) -> UICollectionReusableView {
+
+        if (kind == UICollectionView.elementKindSectionHeader) {
+            let headerView:UICollectionReusableView =  collectionView.dequeueReusableSupplementaryView(ofKind: UICollectionView.elementKindSectionHeader, withReuseIdentifier: "collectionViewHeader", for: indexPath)
+
+             return headerView
+         }
+
+         return UICollectionReusableView()
+
+    }
+    
+    func searchBarSearchButtonClicked( searchBar: UISearchBar) {
+        if(!(searchBar.text?.isEmpty)!){
+            //reload your data source if necessary
+            self.collectionView?.reloadData()
+        }
+    }
+
+    func searchBar( searchBar: UISearchBar, textDidChange searchText: String) {
+        if(searchText.isEmpty){
+            //reload your data source if necessary
+            self.collectionView?.reloadData()
+        }
     }
 
     // MARK: UICollectionViewDelegate
