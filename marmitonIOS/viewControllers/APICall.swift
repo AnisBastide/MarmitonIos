@@ -9,11 +9,8 @@
 import Foundation
 
 public class APICall {
-    
-    
-    
 
-    static func callAPI() {
+    static func callRandomRecipes() {
         let url = URL(string: "https://api.spoonacular.com/recipes/random/?apiKey=d10d3dc0e119465f94422d73fcdb77cd")!
                 
                 let config = URLSessionConfiguration.default
@@ -24,14 +21,75 @@ public class APICall {
                         print(error!.localizedDescription)
                     } else {
                         if let json = try? JSONSerialization.jsonObject(with: data!) {
-                            
                             if let data = json as? [String: AnyObject],
                                let recipes = data["recipes"] as? [AnyObject],
                                let stuff = recipes[0] as? [String: AnyObject] {
-                                var tosend = ["title": stuff["title"], "image": stuff["image"], "id" : stuff["id"]]
+                                let tosend = ["title": stuff["title"], "image": stuff["image"], "id" : stuff["id"]]
                                 print(tosend)
                             }
                         }
+                        
+                    }
+                }
+                task.resume()
+    }
+    
+    static func searchByIngredients(ingredients : [String]) {
+        
+        var ingredientsURL = ""
+        for ingredient in ingredients {
+            ingredientsURL += "+" + ingredient + ","
+        }
+        
+        var url = URL(string: "https://api.spoonacular.com/recipes/findByIngredients?ingredients="+ingredientsURL+"&number=3&apiKey=d10d3dc0e119465f94422d73fcdb77cd")!
+        
+        
+                
+        let config = URLSessionConfiguration.default
+        let sessions = URLSession(configuration: config)
+               
+                let task = sessions.dataTask(with: url) { (data, response, error) in
+                    if error != nil {
+                        print(error!.localizedDescription)
+                    } else {
+                        if let json = try? JSONSerialization.jsonObject(with: data!) {
+                            print(json)
+                            /*if let data = json as? [String: AnyObject],
+                               let recipes = data["recipes"] as? [AnyObject],
+                               let stuff = recipes[0] as? [String: AnyObject] {
+                                let tosend = ["title": stuff["title"], "image": stuff["image"], "id" : stuff["id"]]
+                                print(tosend)
+                            }*/
+                        }
+                        
+                    }
+                }
+                task.resume()
+    }
+    
+    static func searchById(idRecipe: Int) {
+        
+        var url = URL(string: "https://api.spoonacular.com/recipes/"+String(idRecipe)+"/information?apiKey=d10d3dc0e119465f94422d73fcdb77cd")!
+        
+        
+                
+        let config = URLSessionConfiguration.default
+        let sessions = URLSession(configuration: config)
+               
+                let task = sessions.dataTask(with: url) { (data, response, error) in
+                    if error != nil {
+                        print(error!.localizedDescription)
+                    } else {
+                        if let json = try? JSONSerialization.jsonObject(with: data!) {
+                            print(json)
+                            /*if let data = json as? [String: AnyObject],
+                               let recipes = data["recipes"] as? [AnyObject],
+                               let stuff = recipes[0] as? [String: AnyObject] {
+                                let tosend = ["title": stuff["title"], "image": stuff["image"], "id" : stuff["id"]]
+                                print(tosend)
+                            }*/
+                        }
+                        
                     }
                 }
                 task.resume()

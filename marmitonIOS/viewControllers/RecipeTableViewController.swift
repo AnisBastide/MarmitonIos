@@ -15,7 +15,9 @@ class TableViewController: UITableViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        APICall.callAPI()
+        let id = 24567
+        APICall.searchById(idRecipe: id)
+        
         // Uncomment the following line to preserve selection between presentations
         // self.clearsSelectionOnViewWillAppear = false
 
