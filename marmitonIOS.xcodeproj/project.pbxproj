@@ -21,6 +21,7 @@
 		DA9B6DEB26022C9100259822 /* APIRequestTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA9B6DEA26022C9100259822 /* APIRequestTest.swift */; };
 		DA9B6DF326025A8500259822 /* RandomRecipeCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA9B6DF226025A8500259822 /* RandomRecipeCollectionViewController.swift */; };
 		DA9B6DF826026A3200259822 /* RecipeCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA9B6DF626026A3200259822 /* RecipeCollectionViewCell.swift */; };
+		FCC4B6112604AF0F00C4949E /* RecipeNumber2CollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCC4B6102604AF0F00C4949E /* RecipeNumber2CollectionViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -61,6 +62,7 @@
 		DA9B6DEA26022C9100259822 /* APIRequestTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIRequestTest.swift; sourceTree = "<group>"; };
 		DA9B6DF226025A8500259822 /* RandomRecipeCollectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RandomRecipeCollectionViewController.swift; sourceTree = "<group>"; };
 		DA9B6DF626026A3200259822 /* RecipeCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecipeCollectionViewCell.swift; sourceTree = "<group>"; };
+		FCC4B6102604AF0F00C4949E /* RecipeNumber2CollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = RecipeNumber2CollectionViewCell.swift; path = marmitonIos/viewControllers/viewCells/RecipeNumber2CollectionViewCell.swift; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,6 +103,7 @@
 			isa = PBXGroup;
 			children = (
 				DA9B6DF626026A3200259822 /* RecipeCollectionViewCell.swift */,
+				FCC4B6102604AF0F00C4949E /* RecipeNumber2CollectionViewCell.swift */,
 			);
 			path = viewCells;
 			sourceTree = "<group>";
@@ -177,9 +180,6 @@
 		DA9B6DE726022A6200259822 /* viewControllers */ = {
 			isa = PBXGroup;
 			children = (
-				DA9B6DBB260221F900259822 /* HomeController.swift */,
-				DA9B6DEE260239E200259822 /* RecipeTableViewController.swift */,
-				DA9B6DF026023D7100259822 /* RecipeViewController.swift */,
 				755F26062603494200D22629 /* APICall.swift */,
 				DA0784E32603917400DB2139 /* simpleViews */,
 				DA0784E22603908B00DB2139 /* reusableViews */,
@@ -332,10 +332,10 @@
 				DA0784DD26035B6E00DB2139 /* SearchRecipeCollectionViewController.swift in Sources */,
 				DA9B6DF826026A3200259822 /* RecipeCollectionViewCell.swift in Sources */,
 				DA9B6DF326025A8500259822 /* RandomRecipeCollectionViewController.swift in Sources */,
+				FCC4B6112604AF0F00C4949E /* RecipeNumber2CollectionViewCell.swift in Sources */,
 				DA0784E5260391A300DB2139 /* RecipeViewController.swift in Sources */,
 				DA9B6DB8260221F900259822 /* AppDelegate.swift in Sources */,
 				DA9B6DEB26022C9100259822 /* APIRequestTest.swift in Sources */,
-				DA9B6DEF260239E200259822 /* RecipeTableViewController.swift in Sources */,
 				755F26072603494200D22629 /* APICall.swift in Sources */,
 				DA9B6DBA260221F900259822 /* SceneDelegate.swift in Sources */,
 			);

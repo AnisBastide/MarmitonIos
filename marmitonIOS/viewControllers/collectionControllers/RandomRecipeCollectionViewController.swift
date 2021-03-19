@@ -12,7 +12,7 @@ private let reuseIdentifier = "Cell"
 
 class RecipeCollectionViewController: UICollectionViewController {
     var titre: String?
-    var image:String?
+    var image:URL?
     var tab = ["Test", "Micro", "1 2", "3 4", "Encoretilfaluquejelesus", "Théo est en retard", "Etienne", "jambonneau", "xcode c'est de la merde", "Ta faute", "LOUL", "Il pleut putain", "Maitre Gimp", "Photoshiotte", "caca", "en effet"]
 
     override func viewWillAppear(_ animated: Bool) {
@@ -21,6 +21,25 @@ class RecipeCollectionViewController: UICollectionViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
+
+        self.getRandomRecipe { (data, error) in
+            
+   
+            self.titre=data["title"] as! String
+            
+            if let img = data["image"] as? String {
+                self.image =  URL(string:img)!
+                print("DDAAAAATTTAAAAA")
+                print(img)
+            } else {
+                self.image = URL(string:"https://spoonacular.com/recipeImages/638819-556x370.jpg")!
+            }
+            
+            
+            DispatchQueue.main.async{
+                self.collectionView.reloadData()
+            }
+        }
         // Uncomment the following line to preserve selection between presentations
         // self.clearsSelectionOnViewWillAppear = false
 
@@ -48,8 +67,10 @@ class RecipeCollectionViewController: UICollectionViewController {
         return 1
     }
 
-    public func getRandomRecipe(){
-        let url = URL(string: "https://api.spoonacular.com/recipes/random/?apiKey=d10d3dc0e119465f94422d73fcdb77cd&number=6")!
+    
+    func getRandomRecipe(completionHandler: @escaping (_ data: [String: AnyObject], _ error: Error?) -> Void) {
+         
+        let url = URL(string: "https://api.spoonacular.com/recipes/random/?apiKey=3506c2c0754a411eac810f09d947e250&number=6")!
                 
                 let config = URLSessionConfiguration.default
                 let sessions = URLSession(configuration: config)
@@ -62,14 +83,13 @@ class RecipeCollectionViewController: UICollectionViewController {
                             if let data = json as? [String: AnyObject],
                                let recipes = data["recipes"] as? [AnyObject],
                                let stuff = recipes[0] as? [String: AnyObject] {
-                                let tosend = ["title": stuff["title"], "image": stuff["image"], "id" : stuff["id"]]
-                                self.titre=tosend["title"] as! String
-                                self.image = tosend["image"] as! String
-                                DispatchQueue.main.async{
-                                    self.collectionView.reloadData()
-                                }
                                 
-                                print(tosend)
+                               
+                                
+                                completionHandler(stuff, error)
+                                
+                                
+                                //print(tosend)
                             }
                         }
                         
@@ -77,19 +97,29 @@ class RecipeCollectionViewController: UICollectionViewController {
                 }
                 task.resume()
     }
+    
+    
     override func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
         // #warning Incomplete implementation, return the number of items
         return tab.count
     }
 
     override func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
-        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: reuseIdentifier, for: indexPath) as! RecipeCollectionViewCell
+        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: reuseIdentifier, for: indexPath) as! RecipeNumber2CollectionViewCell
     
         // Configure the cell
         cell.backgroundColor = UIColor.red
-        getRandomRecipe()
         cell.label.text = titre
-        return cell
+    
+        if let url = self.image {
+            if let data=try? Data(contentsOf: url){
+                if let img = UIImage(data:data){
+                    cell.imageView.image=img
+                }
+            }
+        }
+            
+            return cell
     }
 
     // MARK: UICollectionViewDelegate

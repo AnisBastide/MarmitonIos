@@ -10,6 +10,7 @@ import UIKit
 
 class RecipeCollectionViewCell: UICollectionViewCell {
     @IBOutlet weak var label : UILabel!
+
     
     override func awakeFromNib() {
         super.awakeFromNib()

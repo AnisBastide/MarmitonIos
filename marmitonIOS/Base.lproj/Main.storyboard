@@ -25,34 +25,37 @@
                             <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
                         </collectionViewFlowLayout>
                         <cells>
-                            <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="Cell" id="ngp-eK-H95" customClass="RecipeCollectionViewCell" customModule="marmitonIOS" customModuleProvider="target">
+                            <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="Cell" id="ngp-eK-H95" customClass="RecipeNumber2CollectionViewCell" customModule="marmitonIOS" customModuleProvider="target">
                                 <rect key="frame" x="0.0" y="0.0" width="150" height="150"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <collectionViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="1oQ-2K-S2u" customClass="RecipeCollectionViewCell" customModule="marmitonIOS" customModuleProvider="target">
                                     <rect key="frame" x="0.0" y="0.0" width="150" height="150"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
-                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dU9-pA-PaU">
-                                            <rect key="frame" x="0.0" y="108" width="150" height="42"/>
+                                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="3Cg-TA-x2M">
+                                            <rect key="frame" x="0.0" y="8" width="142" height="121.5"/>
+                                        </imageView>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dU9-pA-PaU">
+                                            <rect key="frame" x="0.0" y="129.5" width="150" height="20.5"/>
                                             <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                             <nil key="textColor"/>
                                             <nil key="highlightedColor"/>
                                         </label>
-                                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="3Cg-TA-x2M">
-                                            <rect key="frame" x="0.0" y="8" width="142" height="92"/>
-                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                        </imageView>
                                     </subviews>
                                     <constraints>
-                                        <constraint firstAttribute="trailing" secondItem="dU9-pA-PaU" secondAttribute="trailing" id="Mvv-vZ-VRj"/>
-                                        <constraint firstItem="dU9-pA-PaU" firstAttribute="top" secondItem="1oQ-2K-S2u" secondAttribute="top" id="fuz-Gd-PnZ"/>
-                                        <constraint firstItem="dU9-pA-PaU" firstAttribute="leading" secondItem="1oQ-2K-S2u" secondAttribute="leading" id="j64-0W-BVE"/>
-                                        <constraint firstAttribute="bottom" secondItem="dU9-pA-PaU" secondAttribute="bottom" id="tLT-PO-ToF"/>
+                                        <constraint firstItem="dU9-pA-PaU" firstAttribute="leading" secondItem="1oQ-2K-S2u" secondAttribute="leading" id="6oc-Pw-wFk"/>
+                                        <constraint firstItem="dU9-pA-PaU" firstAttribute="top" secondItem="3Cg-TA-x2M" secondAttribute="bottom" id="7a0-5B-b5E"/>
+                                        <constraint firstItem="3Cg-TA-x2M" firstAttribute="leading" secondItem="1oQ-2K-S2u" secondAttribute="leading" id="BjT-m4-iuT"/>
+                                        <constraint firstItem="3Cg-TA-x2M" firstAttribute="top" secondItem="1oQ-2K-S2u" secondAttribute="top" constant="8" id="Vk1-0w-DfH"/>
+                                        <constraint firstAttribute="trailing" secondItem="3Cg-TA-x2M" secondAttribute="trailing" constant="8" id="Yc1-YC-EpP"/>
+                                        <constraint firstAttribute="bottom" secondItem="dU9-pA-PaU" secondAttribute="bottom" id="hxf-3Z-qVq"/>
+                                        <constraint firstAttribute="trailing" secondItem="dU9-pA-PaU" secondAttribute="trailing" id="vh2-j6-L54"/>
                                     </constraints>
                                 </collectionViewCellContentView>
                                 <size key="customSize" width="150" height="150"/>
                                 <connections>
-                                    <outlet property="label" destination="dU9-pA-PaU" id="Qqo-RX-w1I"/>
+                                    <outlet property="imageView" destination="3Cg-TA-x2M" id="JYI-Fl-ZXe"/>
+                                    <outlet property="label" destination="dU9-pA-PaU" id="A6R-UL-JGg"/>
                                     <segue destination="1C7-ri-o26" kind="show" id="DtR-Fq-xL9"/>
                                 </connections>
                             </collectionViewCell>
