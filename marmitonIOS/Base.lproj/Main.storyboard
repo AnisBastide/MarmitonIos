@@ -30,26 +30,29 @@
                                     <rect key="frame" x="0.0" y="0.0" width="150" height="150"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
-                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dU9-pA-PaU">
-                                            <rect key="frame" x="0.0" y="127" width="150" height="23"/>
+                                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" restorationIdentifier="micral" image="gradient" translatesAutoresizingMaskIntoConstraints="NO" id="R76-0g-HN4" userLabel="Image">
+                                            <rect key="frame" x="0.0" y="0.0" width="150.00000000000045" height="150"/>
+                                        </imageView>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dU9-pA-PaU">
+                                            <rect key="frame" x="0.0" y="129.5" width="150" height="20.5"/>
                                             <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                             <nil key="textColor"/>
                                             <nil key="highlightedColor"/>
                                         </label>
-                                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" restorationIdentifier="micral" image="gradient" translatesAutoresizingMaskIntoConstraints="NO" id="R76-0g-HN4" userLabel="Image">
-                                            <rect key="frame" x="0.0" y="0.0" width="150" height="128"/>
-                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                        </imageView>
                                     </subviews>
                                     <constraints>
+                                        <constraint firstAttribute="trailing" secondItem="R76-0g-HN4" secondAttribute="trailing" id="3mI-i6-twu"/>
+                                        <constraint firstItem="R76-0g-HN4" firstAttribute="top" secondItem="1oQ-2K-S2u" secondAttribute="top" id="KT5-qg-a03"/>
                                         <constraint firstAttribute="trailing" secondItem="dU9-pA-PaU" secondAttribute="trailing" id="Mvv-vZ-VRj"/>
-                                        <constraint firstItem="dU9-pA-PaU" firstAttribute="top" secondItem="1oQ-2K-S2u" secondAttribute="top" id="fuz-Gd-PnZ"/>
+                                        <constraint firstItem="R76-0g-HN4" firstAttribute="leading" secondItem="1oQ-2K-S2u" secondAttribute="leading" id="OM6-q8-viy"/>
+                                        <constraint firstAttribute="bottom" secondItem="R76-0g-HN4" secondAttribute="bottom" id="Tar-lg-gcf"/>
                                         <constraint firstItem="dU9-pA-PaU" firstAttribute="leading" secondItem="1oQ-2K-S2u" secondAttribute="leading" id="j64-0W-BVE"/>
                                         <constraint firstAttribute="bottom" secondItem="dU9-pA-PaU" secondAttribute="bottom" id="tLT-PO-ToF"/>
                                     </constraints>
                                 </collectionViewCellContentView>
                                 <size key="customSize" width="150" height="150"/>
                                 <connections>
+                                    <outlet property="imageView" destination="R76-0g-HN4" id="4h6-JU-DOS"/>
                                     <outlet property="label" destination="dU9-pA-PaU" id="Qqo-RX-w1I"/>
                                     <segue destination="1C7-ri-o26" kind="show" id="DtR-Fq-xL9"/>
                                 </connections>
